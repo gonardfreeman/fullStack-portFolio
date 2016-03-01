@@ -1,0 +1,20 @@
+.body1{
+  height:1080px;
+  background: url('http://i.imgur.com/pVbN9c7.jpg') no-repeat,fixed;
+  background-size: cover;  
+}
+.body2{
+  height:1080px;
+  background: url('http://i.imgur.com/rbOljVu.jpg') no-repeat,fixed;
+  background-size: cover;  
+}
+.body3{
+  height:1080px;
+  background: url('http://i.imgur.com/C7xNnSC.jpg') no-repeat,fixed;
+  background-size: cover;  
+}
+.body4{
+  height:1080px;
+  background: url('http://i.imgur.com/u5l34kI.png') no-repeat,fixed;
+  background-size: cover;  
+}
