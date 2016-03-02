@@ -1,3 +1,6 @@
+/*custom fonts*/
+@font-face { font-family: FontAwesome; src: url('FontAwesome.otf'); } 
+
 .body1{
   height:1080px;
   background: url('http://i.imgur.com/pVbN9c7.jpg') no-repeat,fixed;
@@ -18,6 +21,15 @@
   background: url('http://i.imgur.com/u5l34kI.png') no-repeat,fixed;
   background-size: cover;  
 }
+body{
+	font-family: FontAwesome;
+}
 .header{
-	
+	font-size: 26px;
+	font-weight: bold;
+}
+.contacts{
+	margin-right: 35px !important;
+	font-size: 22px;
+	font-weight: bold;
 }
