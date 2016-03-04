@@ -2,37 +2,93 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="main.css"/>
 	<link rel="stylesheet" href="bootstrap.css"/>
 	<link rel="stylesheet" href="font-awesome.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scrollTop();
+			$("#butBackTop").hide("slow");
+			$(window).scroll(function (event) {
+    			var scroll = $(window).scrollTop();
+    			if (scroll<180){
+    				$("#butBackTop").hide("slow");
+    			}
+				});
+			$(window).scroll(function(){
+				if($(window).scrollTop()>180){
+					$("#butBackTop").fadeIn("slow");}
+			});
+		});
+	</script>
 </head>
 <body>
-	<div class="body1" id="home">
-		<div class="header">
-			<ul class="nav nav-tabs contacts">
-			  <li role="presentation"><a name="#home" class="fa fa-home" style="color: #3f3f3f"> Home</a></li>
-			  <li role="presentation"><a href="#bio" class="fa fa-pied-piper-alt" style="color:#3f3f3f"> Bio</a></li>
-			  <li role="presentation"><a href="#portfolio" class="fa fa-file-image-o" style="color: #3f3f3f"> Portfolio</a></li>
-			  <li role="presentation"><a href="#contacts" class="fa fa-optin-monster" style="color: #3f3f3f"> Contacts</a></li>
-			<ul class="nav nav-tabs navbar-right contacts">
-			  <li role="presentation"><a name="#home" class="fa fa-facebook" style="color: #3f3f3f"> Facebook</a></li>
-			  <li role="presentation"><a name="#home" class="fa fa-twitter" style="color: #3f3f3f"> Twitter</a></li>
-			  <li role="presentation"><a name="#home" class="fa fa-fire" style="color: #3f3f3f"> freeCodeCamp</a></li>
-			  <li role="presentation"><a name="#home" class="fa fa-github" style="color: #3f3f3f"> GIT</a></li>
-			</ul><!-- nav-tabs right-->
-			</ul><!-- nav-tabs-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid" >
+			<div class="row">
+				<ul class="nav nav-tabs header">
+				  <li role="presentation"><a name="#home" href="#home" class="fa fa-home" style="color: #3f3f3f"> Home</a></li>
+				  <li role="presentation"><a href="#bio" class="fa fa-pied-piper-alt" style="color:#3f3f3f"> Bio</a></li>
+				  <li role="presentation"><a href="#portfolio" class="fa fa-file-image-o" style="color: #3f3f3f"> Portfolio</a></li>
+				  <li role="presentation"><a href="#contacts" class="fa fa-optin-monster" style="color: #3f3f3f"> Contacts</a></li>
+				<ul class="nav nav-tabs navbar-right ">
+				  <li role="presentation"><a name="#home" class="fa fa-facebook" style="color: #3f3f3f"> Facebook</a></li>
+				  <li role="presentation"><a name="#home" class="fa fa-twitter" style="color: #3f3f3f"> Twitter</a></li>
+				  <li role="presentation"><a name="#home" class="fa fa-fire" style="color: #3f3f3f"> freeCodeCamp</a></li>
+				  <li role="presentation"><a name="#home" class="fa fa-github" style="color: #3f3f3f"> GIT</a></li>
+				</ul><!-- nav-tabs right-->
+				</ul><!-- nav-tabs-->
+			</div><!-- /.row -->
+			</div><!-- /.container-fluid-->
+	</nav>
+	<div class="row">
+		<div class=" body1 col-xs-12"  id="home">
+			<div class="container invback">
+				<div class="row invback">
+					<div class="col-xs-10 center-block invback text-center jumbotron vert-offset-top-19">
+						<h1><em>#</em><u>Road to FullStack</u></h1>
+					</div><!-- /.col-xs-8 center-block -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.body1 -->
+	</div><!-- /.row -->
+	<div class="row">
+		<div class="body2 col-xs-12" id="bio">
+			<div class="row invback center-block">
+
+				<div class="col-xs-4 col-xs-offset-2 vert-offset-top-19 invback text-center">
+					<h2><strong>About me</strong></h2>
+					<p>Hi, I’m Dmytro Bondarenko and I specialize in Computer Software. I’m passionate about what I do, and I love to help people. Nothing is more fulfilling than being part of a team with similar interests, and an organization that values its employees.</p>
+					<p class="text-left"><strong><em><u>Programming languages:</u></em></strong></p>
+					<ul>
+						<li class="text-left" id="li">Python</li>
+						<li class="text-left" id="li">HTML</li>
+						<li class="text-left" id="li">CSS3</li>
+						<li class="text-left" id="li">SQL (DML)</li>
+						<li class="text-left" id="li">JavaScript(standart and jQuery)</li>
+					</ul>
+				</div><!-- /.col-xs-4 col-xs-offset-4 vert-offset-top-19 invback text-center -->
+				<div class="col-xs-4 col-xs-offset-2 invback vert-offset-top-19">
+					<img src="avatar.jpg" alt="My photo" class="img-circle img-responsive" />
+				</div><!-- /.col-xs-4 col-xs-offset-6 vert-offset-top-14 invback -->
+			</div><!-- /.row invback center-block-->
+		</div><!-- /.body2 col-xs-12 -->
+	</div><!-- /.row -->
+	<div class="row">
+		<div class="body3 col-xs-12" id="portfolio">
 			
-		</div><!-- /.header -->
-	</div><!-- /.body1 -->
-	<div class="body2" id="bio">
-		<p><a href="#home">Back to top <i class="fa fa-level-up"></i></a></p>
-	</div><!-- /.body2 -->
-	<div class="body3" id="portfolio">
-		<p><a href="#home">Back to top <i class="fa fa-level-up"></i></a></p>
-	</div><!-- /.body3 -->
-	<div class="body4" id="contacts">
-		<p><a href="#home">Back to top <i class="fa fa-level-up"></i></a></p>
-	</div><!-- /.body4 -->
+		</div><!-- /.body3 -->
+	</div><!-- /.row -->
+	<div class="row">
+		<div class="body4 col-xs-12 " id="contacts">
+			<div class="btnmarg">
+				<a href="#home" class="btn btn-primary" id="butBackTop">Back to top</a>
+			</div><!-- /.btnmarg -->
+		</div><!-- /.body4 -->
+	</div><!-- /.row -->
+	</div><!-- /.container-fluid -->
 </body>
 </html>

@@ -1,35 +1,55 @@
 /*custom fonts*/
 @font-face { font-family: FontAwesome; src: url('FontAwesome.otf'); } 
 
-.body1{
+.body1{	
   height:1080px;
-  background: url('http://i.imgur.com/pVbN9c7.jpg') no-repeat,fixed;
+  width: 100% !important;
+  background: url('http://i.imgur.com/lGLAhh7.jpg') no-repeat,fixed;
   background-size: cover;  
 }
-.body2{
+.body2{	
   height:1080px;
-  background: url('http://i.imgur.com/rbOljVu.jpg') no-repeat,fixed;
+  background: url('http://i.imgur.com/7FJyoXA.jpg') no-repeat,fixed;
   background-size: cover;  
 }
 .body3{
   height:1080px;
-  background: url('http://i.imgur.com/C7xNnSC.jpg') no-repeat,fixed;
+  background: url('http://i.imgur.com/moacQYm.jpg') no-repeat,fixed;
   background-size: cover;  
 }
-.body4{
+.body4{	
   height:1080px;
-  background: url('http://i.imgur.com/u5l34kI.png') no-repeat,fixed;
+  background: url('http://i.imgur.com/8d7zfbj.png') no-repeat,fixed;
   background-size: cover;  
 }
+
 body{
 	font-family: FontAwesome;
+	padding-top: 8em;
 }
 .header{
-	font-size: 26px;
+	font-size: 1.5vw;
 	font-weight: bold;
 }
-.contacts{
-	margin-right: 35px !important;
-	font-size: 22px;
-	font-weight: bold;
+.btnmarg{
+	position: fixed;
+  	bottom: 15px;
+}
+.invback{
+	background-color: transparent !important;
+}
+h1{
+	font-size: 3.5vw !important;
+	color: #3f3f3f !important;
+}
+p{
+	font-size: 1.5vw !important;
+	color: #3f3f3f !important;
+}
+.vert-offset-top-19{
+	margin-top: 19em;
+}
+#li{
+	font-size: 1.5vw !important;
+	color: #3f3f3f !important;
 }
